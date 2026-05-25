@@ -31,10 +31,68 @@ h1, h2, h3 {
 /* リンク */
 
 a {
-  color: var(--theme-color);
-  text-decoration: none;
+  color: blue;
 }
 
+
+/* リスト */
+
+ul {
+  list-style: none;
+}
+li:before {
+  content: "★ ";
+  color: var(--theme-color);
+}
+
+#Works {
+  display: flex;
+  gap: 15px;
+}
+.worksList {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00a0a022;
+  min-width: 220px;
+  max-width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+}
+.worksList img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+
+/* 表 */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 1px #f0f0f0;
+  width: 70%;
+  margin-bottom: 5px;
+}
+tr {
+  background-color: #fff;
+}
+tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+th {
+  background: var(--theme-color);
+  color: #fff;
+  width: 30%;
+}
+th, td {
+  border: solid 1px #f0f0f0;
+  padding: 0.5rem;
+}
+span {
+  white-space: nowrap;
+}
 
 /* リスト */
 
