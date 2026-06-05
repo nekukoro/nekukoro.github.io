@@ -48,20 +48,30 @@ li:before {
 #Works {
   display: flex;
   gap: 15px;
+  list-style: none;
+
+  overflow-x: auto;
+
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
 }
+
 .worksList {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #00a0a022;
-  min-width: 220px;
-  max-width: 30%;
+  width: 260px;
+
+  flex-shrink: 0;
   padding: 10px;
   border-radius: 8px;
+  box-sizing: border-box;
 }
+
 .worksList img {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  display: block;
+  margin-top: 5px;
 }
 
 
