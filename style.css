@@ -58,7 +58,8 @@ li:before {
 
 .worksList {
   background-color: #00a0a022;
-  width: 260px;
+  width: 300px;
+  max-width: 75%;
 
   flex-shrink: 0;
   padding: 10px;
